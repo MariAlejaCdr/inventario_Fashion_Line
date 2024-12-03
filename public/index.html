@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/productos.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Registrar Producto</title>
+</head>
+<body>
+    <header class="text-center">
+        <h1>Gestión de Inventario</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="ver-productos.html">Ver Inventario</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="search-section">
+            <h3>Buscar Productos</h3>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Buscar productos por nombre y categoria..."><br><br>
+                <div class="results-list" id="searchResults"></div><br>
+                <center><button type="submit" class="btn btn-primary" id="actualizarBtn">Actualizar Producto</button></center><br>
+                <center><button type="submit" class="btn btn-primary" id="eliminarBtn">Eliminar Producto</button></center><br>
+            </div>
+        </div>
+        <form action="/registrar" method="post" class="formProductos" id="productoform">
+            <input type="text" class="form-control" id="codigo" name="codigo" placeholder="Codigo del producto" required>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre del producto" required>
+            <input type="text" class="form-control" id="categoria" name="categoria" placeholder="Categoría" required>
+            <input type="number" class="form-control" id="precio" name="precio" placeholder="Precio" required>
+            <input type="number" class="form-control" id="cantidad" name="cantidad" placeholder="Unidades" required>
+            <input type="text" class="form-control" id="talla" name="talla" placeholder="Talla" required>
+            <input type="text" class="form-control" id="proveedor" name="proveedor" placeholder="Proveedor" required>
+            <input type="number" class="form-control" id="umbral_stock" name="umbral_stock" placeholder="Cantidad existencia minima">
+            <center><button type="submit" class="btn btn-primary">Registrar Producto</button></center><br>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/productos.js"></script>
+</body>
+</html>

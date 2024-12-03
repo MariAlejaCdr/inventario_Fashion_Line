@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/productos.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Ver Producto</title>
+</head>
+<body>
+    <header class="text-center">
+        <h1>Gestión de Inventario</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Registrar Producto</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-center">Codigo</th>
+                    <th class="text-center">Nombre</th>
+                    <th class="text-center">Precio</th>
+                    <th class="text-center">Categoría</th>
+                    <th class="text-center">Cantidad</th>
+                    <th class="text-center">Talla</th>
+                    <th class="text-center">Proveedor</th>
+                    <th class="text-center">Cantidad minima</th>
+                </tr>
+            </thead>
+            <tbody id="productosTableBody"></tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="js/ver-productos.js"></script>
+</body>
+</html>
